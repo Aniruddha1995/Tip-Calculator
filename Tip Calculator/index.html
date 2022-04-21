@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tip Calculator</title>
+		
+		
+		
+		
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<div class="card card-body text-center mt-5">
+						<h1 class="heading display-5 pb-3">Tip Calculator</h1>
+						<!--Form-->
+						<form id="tip-form">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">Total Bill</span>
+									<!--Total Bill-->
+									<input type="number" class="form-control" id="totalBill" placeholder="Total Bill" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<label for="">Tip:</label>
+									<!--Tip Range-->
+									<input type="range" class="form-control" id="tipInput" value="0" />
+									<!--Tip Output-->
+									<span class="input-group-addon" id="tipOutput"></span>
+								</div>
+							</div>
+						</form>
+						<hr />
+						<!--Results-->
+						<div id="results" class="pt-4">
+							<h5>Results</h5>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">Tip amount </span>
+									<!--Tip Amount-->
+									<input type="number" class="form-control" id="tipAmount" disabled />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">Total Bill with Tip </span>
+									<!--Total Bill with Tip-->
+									<input type="number" class="form-control" id="totalBillWithTip" disabled />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<script src="app.js"></script>
+	</body>
+</html>
